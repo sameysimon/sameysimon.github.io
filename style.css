@@ -1,0 +1,106 @@
+@import url('satoshi.css');
+
+body {
+    padding: 0px;
+    padding-top: 2vh;
+    margin: 0px;
+    font-family: 'Satoshi-Variable';
+}
+.page {
+    background-color:#003d66;
+    color: white;
+    width: 85vw;
+    min-width: 280px;
+    height: 95vh;
+    margin: auto;
+    height: fit-content;
+}
+
+.banner {
+    background-color: black;
+    margin: 0px;
+    padding: 7px 0px 10px 10px;
+
+}
+.footer {
+    background-color: black;
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+
+}
+h1 {
+    margin: 5pt;
+}
+h2 {
+    margin: 10px 0 10px 0;
+}
+#subtitle {
+    margin: 0px;
+    margin-left: 10pt;
+
+}
+.main {
+    padding: 5pt 10pt;
+}/*
+.TextImage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    width:100%;
+  }
+.TextImage p {
+    float:left;
+    flex-grow: 1;
+    min-width: 60vw;
+}
+.TextImage img {
+    flex-grow: 0;
+    
+    width:200px;
+}
+*/
+
+.TextImage {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    height:200px;
+}
+
+.TextImage img {
+    max-width: 150%;
+    
+}
+
+.TextImage p {
+    min-width: 60vw;
+}
+
+
+@media screen and (max-width: 768px) {
+    .TextImage {
+        display: block;
+        height:100%;
+    }
+
+    .TextImage img {
+        display: block;
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+  
+        padding: 10px;
+        
+    }
+    
+}
