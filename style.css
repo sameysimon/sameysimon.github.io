@@ -5,6 +5,7 @@ body {
     padding-top: 2vh;
     margin: 0px;
     font-family: 'Satoshi-Variable';
+    background-image: url("cloud.jpg");
 }
 .page {
     background-color:#003d66;
@@ -32,6 +33,10 @@ body {
     padding: 20px 0px 20px 0px;
 
 }
+a {
+    color: white;
+    text-decoration: none;
+}
 h1 {
     margin: 5pt;
 }
@@ -45,33 +50,11 @@ h2 {
 }
 .main {
     padding: 5pt 10pt;
-}/*
-.TextImage {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: normal;
-    align-items: normal;
-    align-content: normal;
-    padding-left: 5pt;
-    padding-right: 5pt;
-    width:100%;
-  }
-.TextImage p {
-    float:left;
-    flex-grow: 1;
-    min-width: 60vw;
 }
-.TextImage img {
-    flex-grow: 0;
-    
-    width:200px;
-}
-*/
 
 .TextImage {
     display: grid;
-    align-items: center; 
+    
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
     height:200px;
@@ -79,15 +62,24 @@ h2 {
 
 .TextImage img {
     max-width: 150%;
-    
 }
 
 .TextImage p {
     min-width: 60vw;
 }
+.publication {
+    margin: 10px;
+}
+.publication p {
+    margin: 0;
+}
 
 
 @media screen and (max-width: 768px) {
+    .page {
+        width: 95vw;
+    }
+
     .TextImage {
         display: block;
         height:100%;
