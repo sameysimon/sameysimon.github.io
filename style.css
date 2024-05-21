@@ -57,9 +57,9 @@ a {
 
 .header {
     position: relative;
-    width: 65vw;
+    width: 70vw;
     min-width: 520px;
-    height: 50vh;
+    height: 60vh;
     margin: auto;
     
     padding: 10px;
@@ -112,13 +112,13 @@ a {
 }
 .header h1 {
     font-weight: bold;
-    font-size: 70px;
+    font-size: 10vh;
     margin: 0;
 }
 .header .info {
     margin-left: 10px;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 2.4vh;
 }
 
 .header .links p {
@@ -149,6 +149,8 @@ a {
 }
 .publication {
     margin-bottom: 5px;
+    margin-left: 10px;
+
 }
 
 .publication p {
