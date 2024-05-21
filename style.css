@@ -1,98 +1,165 @@
-@import url('satoshi.css');
-
 body {
-    padding: 0px;
-    padding-top: 2vh;
-    margin: 0px;
-    font-family: 'Satoshi-Variable';
-    background-image: url("cloud.jpg");
-}
-.page {
-    background-color:#003d66;
-    color: white;
-    width: 85vw;
-    min-width: 280px;
-    height: 95vh;
-    margin: auto;
-    height: fit-content;
+    background-color: #f6e8c5;
+    margin: 0;
+    box-sizing: border-box;   
+    position: relative;
 }
 
-.banner {
-    background-color: black;
-    margin: 0px;
-    padding: 7px 0px 10px 10px;
-
+.noise {
+    background-image: url('noise.jpg');
+    background-repeat: repeat;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 15%;
+    top:0;
+    z-index: 0;
 }
-.footer {
-    background-color: black;
-    display: grid;
-    align-items: center; 
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-    text-align: center;
-    padding: 20px 0px 20px 0px;
 
+body::after {
+    content: "";
+    background-image: url('noise.jpg');
+    background-repeat: repeat;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 15%;
+    top:0;
+    pointer-events: none;
 }
+
 a {
-    color: white;
     text-decoration: none;
-}
-h1 {
-    margin: 5pt;
-}
-h2 {
-    margin: 10px 0 10px 0;
-}
-#subtitle {
-    margin: 0px;
-    margin-left: 10pt;
-
-}
-.main {
-    padding: 5pt 10pt;
+    color: inherit;
 }
 
-.TextImage {
-    display: grid;
+.toolbar {
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0; 
+    margin: 0;
+    margin-bottom: 10px;
+}
+.toolbar-button {
+    background-color: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.text-decoration:hover {
+    text-decoration: underline;
+}
+
+.header {
+    position: relative;
+    width: 65vw;
+    min-width: 520px;
+    height: 50vh;
+    margin: auto;
     
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
-    height:200px;
+    padding: 10px;
+    
+    font-family: 'Apple Garamond Light', 'Times New Roman', Times, serif;
+
+    background-image: url("cloud.png");
+    background-position: center; /* Center the image */
+    /*background-size: cover; /* Resize the background image to cover the entire container */
+
+    
+    animation-name: cloudsanim;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    background-size: 120%;
+
+    animation-iteration-count: 1;
+
+    z-index: 1;
 }
 
-.TextImage img {
-    max-width: 150%;
+.bottom {
+    position: absolute;
+    bottom: 0;
 }
 
-.TextImage p {
-    min-width: 60vw;
+@media screen and (max-width: 600px) {
+    .header {
+        width: 100vw;
+        margin: 0;
+        min-width: 0px;
+    }
+    .header .title {
+        position: relative;
+        margin: auto;
+    }
+    .content {
+        min-width: 0px;
+    }
+}
+    
+
+.header .title {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    color: black;
+}
+.header h1 {
+    font-weight: bold;
+    font-size: 70px;
+    margin: 0;
+}
+.header .info {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.header .links p {
+    padding: 0;
+    margin: 0;
+    margin-left: 50px;
+    
+}
+.content {
+    width: 60vw;
+    min-width: 500px;
+    margin: auto;
+    padding: 10px;
+
+    z-index: 1;
+}
+
+.block {
+    font-family: 'Apple Garamond', sans-serif;
+    
+    
+}
+.block h2 {
+    
+}
+.block p {
+    margin-left: 10px;
 }
 .publication {
-    margin: 10px;
+    margin-bottom: 5px;
 }
+
 .publication p {
     margin: 0;
 }
 
-
-@media screen and (max-width: 768px) {
-    .page {
-        width: 95vw;
+@keyframes cloudsanim {
+    0% {
+        background-size: 100%;
     }
-
-    .TextImage {
-        display: block;
-        height:100%;
+    100% {
+        background-size: 120%;
     }
-
-    .TextImage img {
-        display: block;
-        max-width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-  
-        padding: 10px;
-        
-    }
-    
 }
