@@ -77,7 +77,7 @@ a {
     animation-name: cloudsanim;
     animation-duration: 10s;
     animation-timing-function: ease-in-out;
-    background-size: 120%;
+    background-size: 105% 105%;
 
     animation-iteration-count: 1;
 
@@ -174,10 +174,7 @@ a {
         margin-left: 10px;
         margin-right: 10px;
     }
-    .header {
-        background-size: 105% 105%;
-        
-    }
+    
 
 @media screen and (max-width: 850px) {
     .header {
