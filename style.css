@@ -30,6 +30,17 @@ body::after {
     pointer-events: none;
 }
 
+.main {
+    padding: 0px;
+    
+    margin: auto;
+    position: relative;
+    min-width: 520px;
+    max-width: 1100px;
+    width: calc(100% - 30vw);
+
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -57,10 +68,9 @@ a {
 
 .header {
     position: relative;
-    min-width: 520px;
-    max-width: 1100px;
-    width: calc(100% - 164px);
-    height: 55vh;
+
+    height: 500px;
+    
     margin: auto;
     margin-top: 10px;
     box-sizing: border-box;
@@ -173,9 +183,8 @@ a {
     .block p {
         margin-left: 10px;
         margin-right: 10px;
-    }
-    
-
+    }   
+}
 @media screen and (max-width: 850px) {
     .header {
         width: 100vw;
@@ -185,8 +194,12 @@ a {
         min-width: 0px;
         
     }
+    .main {
+        min-width: 100vw;
+    }
 
     .content {
         max-width: 100vw;
+        min-width: 100vw;
     }
 }
