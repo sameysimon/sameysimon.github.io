@@ -22,18 +22,14 @@
     </div>
 
     <div class="main">
-
     <div class="header">
         <div class="title">
             <h1>Simon Kolker</h1>
             <div class="info">            
                 A PhD Candidate at the University of Manchester
             </div>
-
- 
         </div>
     </div>
-
     <div class="content">
         <div class="block">
             <h2>Research Focus</h2>
@@ -96,11 +92,21 @@
                 </p>
             </div>
         </div>
+        <!--
+        <div class="block">
+            <img src="serious.webp" alt="Socrates considers his computer seriously." style="display:block; width:15%; margin:auto;">
+        </div>
+    -->
     </div>
-    
-</div>
-    
+    </div>
+    <div class="footer">
+        <a href="/">simonkolker.com</a>
+        
+    </div>
 </body>
+<script>
+    (new MutationObserver(() => document.body.classList.toggle('dark-reader', document.querySelector('meta[name="darkreader"]'))).observe(document.querySelector('head'), { childList: true }));
+</script>
 </html>
 
 
