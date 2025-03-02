@@ -218,9 +218,12 @@ a {
     }
     .header .title {
         left: auto;
-        width: 100%;
+        width: 90%;
         margin: auto;
+        right: auto;
+        position: relative;
     }
+    
     .header .info {
         margin: auto;
     }
