@@ -23,7 +23,7 @@ html.dark-reader body {
 
 body::after {
     content: "";
-    background-image: url('noise.jpg');
+    background-image: url('noise.webp');
     background-repeat: repeat;
     position:absolute;
     width: 100vw;
@@ -81,7 +81,7 @@ a {
     
     font-family: 'Apple Garamond Light', 'Times New Roman', Times, serif;
 
-    background-image: url("cloud.png");
+    background-image: url("cloud.webp");
     background-position: center; /* Center the image */
     /*background-size: cover; /* Resize the background image to cover the entire container */
 
