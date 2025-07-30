@@ -2,132 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name=“theme-color” content=“#FFFFFF” /> 
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.cdnfonts.com/css/apple-garamond" rel="stylesheet">
     <title>Simon Kolker</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io//favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
-
 </head>
 <body>
-    <div class="toolbar">
-        <div class="toolbar-button"><a href="https://github.com/sameysimon">GitHub</a></div>
-        <div class="toolbar-button"><a href="https://research.manchester.ac.uk/en/persons/simon.kolker">University of Manchester</a></div>
-        <div class="toolbar-button"><a href="https://www.linkedin.com/in/simonkolker/">LinkedIn</a></div>
-    </div>
-
-    <div class="main">
-    <div class="header">
-        <div class="title">
-            <h1>Simon Kolker</h1>
-            <div class="info">            
-                A PhD Candidate at the University of Manchester
-            </div>
-        </div>
-    </div>
     <div class="content">
-        <div class="block">
-            <h2>Research Focus</h2>
-            <p>
-                I am a PhD student in the Department of Computer Science at the University of Manchester.
-                Particularly, my project aims to study the effect of uncertainty on Machine Ethics. As autonomous systems take more responsibility in the real world, the consequences of their actions reach into every facet of our lives. 
-            </p>
+    <div class="header">
+        <h1>Simon Kolker</h1>
+        <h3>A PhD candidate at the University of Manchester</h3>
+    </div>
+    <div class="section">
+        <p>My PhD project studies the effect of uncertainty on Machine Ethics. As autonomous systems take more responsibility in the real world, their decisions must reflect our values while handling moral and outcome uncertainty.</p>
+        <p>Find me on <a href="https://github.com/sameysimon">GitHub</a>, <a href="https://scholar.google.co.uk/citations?hl=en&user=0gBc-XAAAAAJ">Google Scholar</a>, <a href="https://research.manchester.ac.uk/en/persons/simon.kolker">the University of Manchester</a> and <a href="https://www.linkedin.com/in/simonkolker/">LinkedIn</a>.</p>
+    </div>    
+    <div class="section">
+        <h2>Roles</h2>
+        <ul>
+            <li><a href="https://autonomy-and-verification.github.io/">Member of the Autonomy and Verification Network</a></li>
+            <li><a href="https://fmasworkshop.github.io/">FMAS Organising Committee Member</a></li>
+            <li><a href="https://fearworkshop.github.io/2025/workshop/">Programme Committee Member for the Formal Ethical Agents and Robots workshop</a></li>
+            <li><a href="https://2024.smcit-scc.space/">Former Publicity Chair for IEEE Space Mission Challenges for Information Technology and Space Computing Conference</a></li>
+        </ul>
+    </div>
 
-            <p>Autonomous systems are an increasingly prevalent feature of the modern world, gaining responsibility as drivers, medical practitioners and soldiers.
-
-            <p> As their decisions affect humans, autonomous agents have an increasing ethical impact.
-                The real world is a complex, unpredictable system, meaning agents must interpret and select actions with uncertainty amongst their outcomes. 
-                The real world is `open' to new situations unanticipated by the system's designers, meaning agents could inflict harm on humans.</p>
-                
-            <p> Machine Ethics is the study of how ethical reasoning can be computationally implemented, but there has been little focus on ethical reasoning under uncertainty.
-                This may be due to a gap in Moral Philosophy for uncertain situations.
-                Historically, there is an assumption that Ethics decides the values and it is up to Decision Theory to maximise those values under uncertainty.
-                This view has materialised in Machine Ethics implementations with expected utility maximisation in Reinforcement Learning, probabilistic planning.</p>
-                
-            <p> Unfortunately, expected utility as the singular criterion for ethical decision making is prone to criticism.
-                Additionally, I believe if Machine Ethics implementations are to be widely adopted, implementations must be aligned with their stakeholders' personal views on Ethics.
-                An individual's views may draw from various Philosophical traditions (e.g. Deontology, Virtue Ethics, Ethics of Care etc.) and there may be uncertainty or conflict between these moral theories.</p>
-                
-            <p> For any treatment of uncertainty in Machine Ethics, decisions ought to be made in a planning context: considering future decisions rather than selecting the immediately preferred action in every case. As the Automated Planning community demonstrates, such consideration is required in reaching the most desirable outcomes.</p>
-
-        </div>
-        <div class="block">
-            <h2>Roles</h2>
-            <ul>
-                <li>Member of the <a href="https://autonomy-and-verification.github.io/">Autonomy and Verification Network</a></li>
-                <li>Publicity Chair for <a href="http://https://smcit-scc.space/">IEEE Space Mission Chalenges for Information Technology IEEE Space Computing Conference</a> </li>
-            </ul>
-        </div>
+    <div class="section">
+        <h2>Publications</h2>
         <div id="papers" class="block">
-            <h2>Papers</h2>
             <div class="publication">
                 <p><b>Uncertain Machine Ethics Planning (2025)</b></p>
                 <p>Simon Kolker, Louise Dennis, Ramon Fraga Pereira, and Mengwei Xu</p>
-                <p>24th International Conference on Autonomous Agents and Multiagent Systems</p>
+                <p><a class="subtle" href="https://aamas2025.org/">24th International Conference on Autonomous Agents and Multiagent Systems</a></p>
                 <p>
                     <a>[Paper Upcoming]</a>
                     <a href="https://www.youtube.com/watch?v=wt0YqWx7hN0">[Short Video]</a>
                     <a href="/ShortPres.pdf">[Short Video Slides]</a>
                     <a href="https://github.com/sameysimon/MoralPlanner">[Code]</a>
-
-
                 </p>
             </div>
             <div class="publication">
                 <p><b>Applying Ethical Decision Making in Space Missions (2024)</b></p>
                 <p>Simon Kolker, Louise Dennis, Ramon Fraga Pereira, and Mengwei Xu</p>
-                <p>In the New Ideas and Emerging Results Track at SMC-IT/SCC 2024</p>
+                <p>In the New Ideas and Emerging Results Track at <a href="https://2024.smcit-scc.space/" class="subtle">SMC-IT/SCC 2024</a></p>
                 <p>
                     <a href="https://ieeexplore.ieee.org/document/10794849">[IEEE]</a>
                 </p>
             </div>
             <div class="publication">
+                <p><b>Selecting Ethical Actions by Retrospection on Hypothetical Outcomes (2023)</b></p>
+                <p>Simon Kolker, Louise Dennis, Ramon Fraga Pereira, and Mengwei Xu</p>
+                <p><a class="subtle" href="https://sites.google.com/view/cme2023/home">In International Workshop on Computational Machine Ethics (CME) 2023</a></p>
+                <p>
+                    <a href="">[Arxiv]</a>
+                </p>
+            </div>
+            <div class="publication">
                 <p><b>Machine Ethical Decisions with Hypothetical Retrospection (2023)</b></p>
                 <p>Simon Kolker, Louise Dennis, Ramon Fraga Pereira, and Mengwei Xu</p>
-                <p>In International Workshop on Coordination, Organizations, Institutions, Norms and Ethics for Governance of Multi-Agent Systems (COINE) 2023</p>
+                <p><a class="subtle" href="https://coin-workshop.github.io/coine-2023-london/">In International Workshop on Coordination, Organizations, Institutions, Norms and Ethics for Governance of Multi-Agent Systems (COINE) 2023</a></p>
                 <p>
                     <a href="https://arxiv.org/abs/2305.01424">[Arxiv]</a>
                     <a href="https://github.com/sameysimon/HypotheticalRetrospectionMachine">[Code]</a>
                     <a href="https://link.springer.com/chapter/10.1007/978-3-031-49133-7_9">[Springer]</a>
                 </p>
             </div>
-            <!-- <div class="publication">
-                <p><b>Selecting Ethical Actions by Retrospection on Hypothetical Outcomes</b></p>
-                <p>Simon Kolker, Louise Dennis, Ramon Fraga Pereira, and Mengwei Xu</p>
-                <p>In International Workshop on Computational Machine Ethics (CME) 2023</p>
-                <p>
-                    <a href="">[Arxiv]</a>
-                </p>
-            </div> -->
+
             
         </div>
-        <!--
-        <div class="block">
-            <img src="serious.webp" alt="Socrates considers his computer seriously." style="display:block; width:15%; margin:auto;">
-        </div>
+    </div>
+    <!--
+    <div class="t">
+        <svg height="500px" width="400px" viewBox="0 -1350 300 1400" preserveAspectRatio="xMinYMin meet">
+            
+            <path d="M 0 -660 S 174 -660 117 -1010 S 218 -1285 230 -1300" 
+                style="fill:none;stroke:black;stroke-width:3"/>
+
+            
+            <path d="M 0 -660 S 174 -660 117 -310 S 204 -5 230 0" 
+                style="fill:none;stroke:black;stroke-width:3"/>
+        </svg>
+    </div>
     -->
     </div>
-    </div>
-    <div class="footer">
-        <a href="/">simonkolker.com</a>
-        
-    </div>
 </body>
-<script>
-    var isDarkReaderEnabled = "querySelector" in document &&
-        !!document.querySelector("meta[name=darkreader]");
-
-    if (isDarkReaderEnabled)
-        document.getElementsByTagName('html')[0].classList.add('dark-reader');
-
-    (new MutationObserver(() => document.getElementsByTagName('html')[0].classList.toggle('dark-reader', document.querySelector('meta[name="darkreader"]'))).observe(document.querySelector('head'), { childList: true }));
-</script>
 </html>
-
-

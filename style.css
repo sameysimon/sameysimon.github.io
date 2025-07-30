@@ -1,229 +1,79 @@
-html {
-    background-color: black;
+h1 {
+    margin-bottom: 5px;
 }
-body {
-    background-color: #f6e8c5;
+h3 {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;   
-    position: relative;
 }
-@media (prefers-color-scheme: dark) {
+
+
+.content {
+    margin-left: 10%;
+    margin-bottom: 5%;
+    width: 500px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* Vertically center .content if it fits in the viewport */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media only screen and (max-height: 700px) {
     body {
-        background-color: #121212;
-        color: white;
+        display: block;
+    }
+    .content {
+    margin-top: 50px;
+
+
     }
 }
-html.dark-reader body {
-    background-color: #121212;
-    color: white;
+
+
+svg {
+    float: right;
+    width: 40%;
+}
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 80%;
+    }
 }
 
 
 
-body::after {
-    content: "";
-    background-image: url('noise.webp');
-    background-repeat: repeat;
-    position:absolute;
-    width: 100vw;
-    height: 100%;
-    margin: 0;
-    opacity: 15%;
-    top:0;
-    pointer-events: none;
-}
-
-.main {
-    padding: 0px;
-    margin: auto;
-    position: relative;
-
-    max-width: 1100px;
-    width: calc(100% - 30vw);
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.toolbar {
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px 0; 
-    margin: 0;
-    
-}
-.toolbar-button {
-    background-color: none;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-.text-decoration:hover {
-    text-decoration: underline;
-}
-
-.header {
-    position: relative;
-    overflow: hidden;
-    height: 500px;
-    
-    margin: auto;
-    margin-top: 10px;
-    box-sizing: border-box;
-
-    padding: 10px;
-    
-    font-family: 'Apple Garamond Light', 'Times New Roman', Times, serif;
-
-    background-image: url("cloud.webp");
-    background-position: center; /* Center the image */
-    /*background-size: cover; /* Resize the background image to cover the entire container */
-
-    
-    animation-name: cloudsanim;
-    animation-duration: 10s;
-    animation-timing-function: ease-in-out;
-    background-size: 105% 105%;
-
-    animation-iteration-count: 1;
-
-    z-index: 1;
-
-   
-}
-
-.bottom {
-    position: absolute;
-    bottom: 0;
-}
-    
-
-.header .title {
-    box-sizing: border-box;
-    max-width: 100%;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(0, -50%);
-    color: black;
-}
-.header h1 {
-    font-weight: bold;
-    font-size: 10vh;
-    margin: 0;
-}
-.header .info {
-    margin-left: 10px;
-    margin-bottom: 10px;
-    font-size: 3vh;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-.header .links p {
-    padding: 0;
-    margin: 0;
-    margin-left: 50px;
-    
-}
-.content {
-    max-width: 1100px;
-    width: calc(100% - 164px);
-    min-width: 500px;
-
-    margin: auto;
-    font-size: 18pt;
-    z-index: 1;
-}
-
-.block {
-    font-family: 'Apple Garamond', sans-serif;
-    
-    
-}
-.block h2 {
-    font-size: 22pt;
-}
-.block p {
-    margin-left: 16pt;
-    
-}
 .publication {
     margin-bottom: 5px;
-    margin-left: 10px;
+    margin-left: 15px;
 
 }
-
 .publication p {
     margin: 0;
 }
-
-.footer {
+svg {
+    position: absolute;
     width: 100%;
-    height: 10vh;
-    background-color: black;
-    text-align: center;
-    color: white;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+}
+.subtle {
+    color: inherit;
+}
+.hidden {
+    opacity: 30%;
+    margin-left: 5%;
+
+    animation-name: shift_back;
+    animation-duration: 0.7s;
 }
 
-
-@keyframes cloudsanim {
-    0% {
-        background-size: 100% 100%;
-    }
-    100% {
-        background-size: 105% 105%;
-    }
+@keyframes shift_back {
+  from {opacity: 100%; margin-left: 10%;}
+  to {opacity: 30%; margin-left: 5%;}
 }
 
-
-@media screen and (max-width: 1000px) {
-    .main {
-        width: 100%;
-        max-width: none;
-        min-width: none;
-    }
-    .header {
-        width: 100vw;
-        margin: 0;
-        margin-top: 0px;
-        padding:0;
-        min-width: 0px;
-        
-    }
-    .content {
-        overflow-x: hidden;
-        min-width: 90vw;
-        margin: auto;
-
-
-    }
-}
-
-@media screen and (max-width: 530px) {
-    .header {
-        text-align: center;
-    }
-    .header .title {
-        left: auto;
-        width: 90%;
-        margin: auto;
-        right: auto;
-        position: relative;
-    }
-    
-    .header .info {
-        margin: auto;
-    }
-}

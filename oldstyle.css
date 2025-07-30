@@ -1,0 +1,229 @@
+html {
+    background-color: black;
+}
+body {
+    background-color: #f6e8c5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    position: relative;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: white;
+    }
+}
+html.dark-reader body {
+    background-color: #121212;
+    color: white;
+}
+
+
+
+body::after {
+    content: "";
+    background-image: url('noise.webp');
+    background-repeat: repeat;
+    position:absolute;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    opacity: 15%;
+    top:0;
+    pointer-events: none;
+}
+
+.main {
+    padding: 0px;
+    margin: auto;
+    position: relative;
+
+    max-width: 1100px;
+    width: calc(100% - 30vw);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.toolbar {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0; 
+    margin: 0;
+    
+}
+.toolbar-button {
+    background-color: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.text-decoration:hover {
+    text-decoration: underline;
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    
+    margin: auto;
+    margin-top: 10px;
+    box-sizing: border-box;
+
+    padding: 10px;
+    
+    font-family: 'Apple Garamond Light', 'Times New Roman', Times, serif;
+
+    background-image: url("cloud.webp");
+    background-position: center; /* Center the image */
+    /*background-size: cover; /* Resize the background image to cover the entire container */
+
+    
+    animation-name: cloudsanim;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    background-size: 105% 105%;
+
+    animation-iteration-count: 1;
+
+    z-index: 1;
+
+   
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+}
+    
+
+.header .title {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    color: black;
+}
+.header h1 {
+    font-weight: bold;
+    font-size: 10vh;
+    margin: 0;
+}
+.header .info {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 3vh;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.header .links p {
+    padding: 0;
+    margin: 0;
+    margin-left: 50px;
+    
+}
+.content {
+    max-width: 1100px;
+    width: calc(100% - 164px);
+    min-width: 500px;
+
+    margin: auto;
+    font-size: 18pt;
+    z-index: 1;
+}
+
+.block {
+    font-family: 'Apple Garamond', sans-serif;
+    
+    
+}
+.block h2 {
+    font-size: 22pt;
+}
+.block p {
+    margin-left: 16pt;
+    
+}
+.publication {
+    margin-bottom: 5px;
+    margin-left: 10px;
+
+}
+
+.publication p {
+    margin: 0;
+}
+
+.footer {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    text-align: center;
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@keyframes cloudsanim {
+    0% {
+        background-size: 100% 100%;
+    }
+    100% {
+        background-size: 105% 105%;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .main {
+        width: 100%;
+        max-width: none;
+        min-width: none;
+    }
+    .header {
+        width: 100vw;
+        margin: 0;
+        margin-top: 0px;
+        padding:0;
+        min-width: 0px;
+        
+    }
+    .content {
+        overflow-x: hidden;
+        min-width: 90vw;
+        margin: auto;
+
+
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .header {
+        text-align: center;
+    }
+    .header .title {
+        left: auto;
+        width: 90%;
+        margin: auto;
+        right: auto;
+        position: relative;
+    }
+    
+    .header .info {
+        margin: auto;
+    }
+}
