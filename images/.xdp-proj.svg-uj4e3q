@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="28.901564mm"
+   height="284.17596mm"
+   viewBox="0 0 28.901564 284.17596"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="side.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.2674155"
+     inkscape:cx="28.798764"
+     inkscape:cy="624.10473"
+     inkscape:window-width="1623"
+     inkscape:window-height="1214"
+     inkscape:window-x="1606"
+     inkscape:window-y="45"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g2">
+    <inkscape:page
+       x="9.2179327e-17"
+       y="0"
+       width="28.901566"
+       height="284.17596"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="main"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:none"
+     transform="translate(-2.037069,-10.936189)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.265;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 2.3195691,11.218688 c 0,0 7.0328,16.247593 3.34759,37.474859 -3.31832,19.113908 16.9829309,37.413816 12.5223809,59.002573 -3.51033,16.98972 -16.9081309,15.43952 -14.5736609,48.57381 1.1158,15.83705 -1.1536,13.49326 1.92604,59.31816 3.70956,55.19805 4.09556,69.88759 4.16043,70.73094"
+       id="path1"
+       sodipodi:nodetypes="cssssc"
+       inkscape:export-filename="main.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+  <g
+     inkscape:label="side"
+     inkscape:groupmode="layer"
+     id="g2"
+     transform="translate(-2.037069,-10.936189)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.565;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 2.3195691,11.218688 c 0,0 7.0328,16.247593 3.34759,37.474859 C 2.3488391,67.807455 22.65009,86.107363 18.18954,107.69612 14.67921,124.68584 2.3921713,123.07605 3.6158791,156.26993 5.2208299,199.80527 24.499686,176.22494 29.689523,212.73022 36.506096,260.67795 4.8780038,236.25388 9.4197837,294.82964"
+       id="path2"
+       sodipodi:nodetypes="cssssc"
+       inkscape:export-filename="main.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>

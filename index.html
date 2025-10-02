@@ -3,86 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Simon Kolker</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
 </head>
 <body>
-    <div class="content">
-    <div class="header">
-        <h1>Simon Kolker</h1>
-        <h3>A PhD candidate at the University of Manchester</h3>
-    </div>
-    <div class="section">
-        <p>My PhD project studies the effect of uncertainty on Machine Ethics. As autonomous systems take more responsibility in the real world, their decisions must reflect our values while handling moral and outcome uncertainty.</p>
-        <p>Find me on <a href="https://github.com/sameysimon">GitHub</a>, <a href="https://scholar.google.co.uk/citations?hl=en&user=0gBc-XAAAAAJ">Google Scholar</a>, <a href="https://research.manchester.ac.uk/en/persons/simon.kolker">the University of Manchester</a> and <a href="https://www.linkedin.com/in/simonkolker/">LinkedIn</a>.</p>
-    </div>    
-    <div class="section">
-        <h2>Roles</h2>
-        <ul>
-            <li><a href="https://autonomy-and-verification.github.io/">Member of the Autonomy and Verification Network</a></li>
-            <li><a href="https://fmasworkshop.github.io/">FMAS Organising Committee Member</a></li>
-            <li><a href="https://fearworkshop.github.io/2025/workshop/">Programme Committee Member for the Formal Ethical Agents and Robots workshop</a></li>
-            <li><a href="https://2024.smcit-scc.space/">Former Publicity Chair for IEEE Space Mission Challenges for Information Technology and Space Computing Conference</a></li>
-        </ul>
-    </div>
+    <div class="contain">
+        <div class="page">
+            <div class="header">
+                <h1>Simon Kolker</h1>
+                <h3>A PhD candidate at the University of Manchester</h3>
+            </div>
+            <div class="section">
+                <!--<button id="switch">Set to Left</button>-->
+                <p>Studying the effect of uncertainty on Machine Ethics. As autonomous systems take more responsibility in the real world, their decisions must reflect our values while handling moral and outcome uncertainty.</p>
+                <p>Find me on 
+                    <a href="https://github.com/sameysimon">GitHub</a>,
+                     <a href="https://scholar.google.co.uk/citations?hl=en&amp;user=0gBc-XAAAAAJ"> Google Scholar</a>,
+                      <a href="https://research.manchester.ac.uk/en/persons/simon.kolker">the University of Manchester</a> and
+                      <a href="https://www.linkedin.com/in/simonkolker/">LinkedIn</a>.</p>
+            </div>    
+            <div class="section">
+                <h2>Roles</h2>
+                <div class="block">
+                    <ul>
+                        <li><a href="https://autonomy-and-verification.github.io/">Member of the Autonomy and Verification Network</a></li>
+                        <li><a href="https://www.advance-he.ac.uk/">Associate Fellow with Advance HE</a></li>
+                        <li><a href="https://fmasworkshop.github.io/">FMAS Organising Committee Member</a></li>
+                        <li><a href="https://fearworkshop.github.io/2025/workshop/">Programme Committee Member for the Formal Ethical Agents and Robots workshop</a></li>
+                        <li><a href="https://2024.smcit-scc.space/">Former Publicity Chair for IEEE Space Mission Challenges for Information Technology and Space Computing Conference</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="section">
+                <h2>Projects</h2>
+                <div class="block">
+                    <ul>
+                        <li><a href="https://github.com/sameysimon/MoralPlanner">Multi-Objective Heuristic Planner with Ethical Argumentation</a>
+                            <br/>
+                            C++ Planner with Python environment generator. Back-end server mode with CURL.
+                        </li>
+                        <li><a href="https://github.com/sameysimon/explain_mplan">Moral Planner Policy Explanation Tool</a>
+                            <br/>
+                            React Front-end for above. Explains argumentation and visualise policies with D3.js.
+                        </li>
+                        <li><a href="https://github.com/sameysimon/Virtual-Reality-Meeting-Room">Online Virtual Reality Meeting Room Honours Project</a>
+                            <br/>
+                            Unity XR environment with peer-to-peer networking and UDP Windows share-screen.
+                        </li>
+                    </ul>
+                    See more on my <a href="https://github.com/sameysimon">GitHub</a>
+                </div>
+            </div>
+            <!--
+            <div class="section">
+                <h2>Skills</h2>
+                <div class="block">
+                    Experienced with C++, Python, HTML/CSS/Javascript/TypeScript, React, C#, Unity and more.
+                    Meddled with Docker, ROS (Robotic Operating System), Prolog and more.
+                </div>
+            </div>-->
+            <div class="section">
+                <h2>Publications</h2>
+                <div id="papers" class="block">
+                    <div class="publication">
+                        <p><b>Uncertain Machine Ethics Planning (2025)</b></p>
+                        <p>Simon Kolker, Louise Dennis, Ramon Fraga Pereira, and Mengwei Xu</p>
+                        <p><a class="subtle" href="https://aamas2025.org/">24th International Conference on Autonomous Agents and Multiagent Systems</a></p>
+                        <p>
+                            <a href="https://dl.acm.org/doi/abs/10.5555/3709347.3743636">[Paper]</a>
+                            <a href="https://www.youtube.com/watch?v=wt0YqWx7hN0">[Short Video]</a>
+                            <a href="/ShortPres.pdf">[Short Video Slides]</a>
+                            <a href="https://github.com/sameysimon/MoralPlanner">[Code]</a>
+                        </p>
+                    </div>
+                    <div class="publication">
+                        <p><b>Applying Ethical Decision Making in Space Missions (2024)</b></p>
+                        <p>Simon Kolker, Louise Dennis, Ramon Fraga Pereira, and Mengwei Xu</p>
+                        <p>In the New Ideas and Emerging Results Track at <a href="https://2024.smcit-scc.space/" class="subtle">SMC-IT/SCC 2024</a></p>
+                        <p>
+                            <a href="https://ieeexplore.ieee.org/document/10794849">[IEEE]</a>
+                        </p>
+                    </div>
+                    <div class="publication">
+                        <p><b>Selecting Ethical Actions by Retrospection on Hypothetical Outcomes (2023)</b></p>
+                        <p>Simon Kolker, Louise Dennis, Ramon Fraga Pereira, and Mengwei Xu</p>
+                        <p><a class="subtle" href="https://sites.google.com/view/cme2023/home">In International Workshop on Computational Machine Ethics (CME) 2023</a></p>
+                        <p>
+                            <a href="">[Arxiv]</a>
+                        </p>
+                    </div>
+                    <div class="publication">
+                        <p><b>Machine Ethical Decisions with Hypothetical Retrospection (2023)</b></p>
+                        <p>Simon Kolker, Louise Dennis, Ramon Fraga Pereira, and Mengwei Xu</p>
+                        <p><a class="subtle" href="https://coin-workshop.github.io/coine-2023-london/">In International Workshop on Coordination, Organizations, Institutions, Norms and Ethics for Governance of Multi-Agent Systems (COINE) 2023</a></p>
+                        <p>
+                            <a href="https://arxiv.org/abs/2305.01424">[Arxiv]</a>
+                            <a href="https://github.com/sameysimon/HypotheticalRetrospectionMachine">[Code]</a>
+                            <a href="https://link.springer.com/chapter/10.1007/978-3-031-49133-7_9">[Springer]</a>
+                        </p>
+                    </div>
+        
+                    
+                </div>
+            </div>
+            <div class="section" id="gallerySection">
+                <h2>Gallery</h2>
+                <div id="slide">
+                    <img src="images/slides/smallDetroit.webp" id="img" alt="dog" srcset="">
+                    <div id="caption">In Detroit</div>
+                    <a class="prev" onclick="nextSlide(-1)"><</a>
+                    <a class="next" onclick="nextSlide(1)">></a>
+                </div>
+            </div>
+        </div>
+        <div class="lineContainer">
+            <svg viewBox="0 0 48 420" fill="none" preserveAspectRatio="xMidYMax meet">
+                <path
+                    style="fill:none;stroke:#000000;stroke-width:1.265;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+                    d="M 2.9224995,5 V 398.5445"
+                    id="path1_base" />
+                <path
+                    style="fill:none;stroke:#000000;stroke-width:1.265;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+                    d="m 2.9226142,5 h -10e-8 c 0,0 -0.00434,285.21101 -0.00434,288.52507 0,3.31406 14.8904229,10.70646 14.8933229,15.37077 0.10421,8.82492 0.213177,8.8948 0.07216,16.79129 -0.01117,2.9585 -0.977479,8.91493 -6.810757,13.36774 -2.3480462,1.79237 -8.1536952,7.83594 -8.1536952,20.52577 0,16.15452 0.00206,31.64618 0.00331,33.87276 0.00229,4.08818 -7e-7,5.04847 -7e-7,5.04847"
+                    id="path2_base" />
+                <path
+                    style="fill:none;stroke:#1c6ce4;stroke-width:1.265;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+                    d="m 2.9226142,5 h -10e-8 c 0,0 -0.00434,285.21101 -0.00434,288.52507 0,3.31406 14.8904229,10.70646 14.8933229,15.37077 0.10421,8.82492 0.213177,8.8948 0.07216,16.79129 -0.01117,2.9585 -0.977479,8.91493 -6.810757,13.36774 -2.3480462,1.79237 -8.1536952,7.83594 -8.1536952,20.52577 0,16.15452 0.00206,31.64618 0.00331,33.87276 0.00229,4.08818 -7e-7,5.04847 -7e-7,5.04847"
+                    id="path2" />
+                <path
+                    style="fill:none;stroke:#1c6ce4;stroke-width:1.265;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+                    d="M 2.9224995,5 V 398.5445"
+                    id="path1" />
+                
+                <g id="switchG">
+                    <image id="switch" width="10" height="10" x="-5" y="-5" href="images/switch.svg"/>
+                </g>
+                <text id="switchMsg" style="font-family:'Roboto Slab', serif" opacity="0" width="20" height="5" font-size="3"fontx="-10" y="0" fill="red">Go back!</text>
+                
+                <image class="per_t1" id="per1" width="6" height="6" href="images/Confused.svg"/>
+                <image class="per_t1" id="per2" width="6" height="6" href="images/Confused.svg"/>
+                <image class="per_t1" id="per3" width="6" height="6" href="images/Confused.svg"/>
+                <image class="per_t1" id="per4" width="6" height="6" href="images/Confused.svg"/>
+                <image class="per_t1" id="per5" width="6" height="6" href="images/Confused.svg"/>
+                
+                <image id="per6" width="6" height="6" href="images/Concern.svg"/>
+                <circle r="2px" fill="#1c6ce4" id="train"/>
 
-    <div class="section">
-        <h2>Publications</h2>
-        <div id="papers" class="block">
-            <div class="publication">
-                <p><b>Uncertain Machine Ethics Planning (2025)</b></p>
-                <p>Simon Kolker, Louise Dennis, Ramon Fraga Pereira, and Mengwei Xu</p>
-                <p><a class="subtle" href="https://aamas2025.org/">24th International Conference on Autonomous Agents and Multiagent Systems</a></p>
-                <p>
-                    <a>[Paper Upcoming]</a>
-                    <a href="https://www.youtube.com/watch?v=wt0YqWx7hN0">[Short Video]</a>
-                    <a href="/ShortPres.pdf">[Short Video Slides]</a>
-                    <a href="https://github.com/sameysimon/MoralPlanner">[Code]</a>
-                </p>
-            </div>
-            <div class="publication">
-                <p><b>Applying Ethical Decision Making in Space Missions (2024)</b></p>
-                <p>Simon Kolker, Louise Dennis, Ramon Fraga Pereira, and Mengwei Xu</p>
-                <p>In the New Ideas and Emerging Results Track at <a href="https://2024.smcit-scc.space/" class="subtle">SMC-IT/SCC 2024</a></p>
-                <p>
-                    <a href="https://ieeexplore.ieee.org/document/10794849">[IEEE]</a>
-                </p>
-            </div>
-            <div class="publication">
-                <p><b>Selecting Ethical Actions by Retrospection on Hypothetical Outcomes (2023)</b></p>
-                <p>Simon Kolker, Louise Dennis, Ramon Fraga Pereira, and Mengwei Xu</p>
-                <p><a class="subtle" href="https://sites.google.com/view/cme2023/home">In International Workshop on Computational Machine Ethics (CME) 2023</a></p>
-                <p>
-                    <a href="">[Arxiv]</a>
-                </p>
-            </div>
-            <div class="publication">
-                <p><b>Machine Ethical Decisions with Hypothetical Retrospection (2023)</b></p>
-                <p>Simon Kolker, Louise Dennis, Ramon Fraga Pereira, and Mengwei Xu</p>
-                <p><a class="subtle" href="https://coin-workshop.github.io/coine-2023-london/">In International Workshop on Coordination, Organizations, Institutions, Norms and Ethics for Governance of Multi-Agent Systems (COINE) 2023</a></p>
-                <p>
-                    <a href="https://arxiv.org/abs/2305.01424">[Arxiv]</a>
-                    <a href="https://github.com/sameysimon/HypotheticalRetrospectionMachine">[Code]</a>
-                    <a href="https://link.springer.com/chapter/10.1007/978-3-031-49133-7_9">[Springer]</a>
-                </p>
-            </div>
-
-            
+            </svg>
         </div>
     </div>
-    <!--
-    <div class="t">
-        <svg height="500px" width="400px" viewBox="0 -1350 300 1400" preserveAspectRatio="xMinYMin meet">
-            
-            <path d="M 0 -660 S 174 -660 117 -1010 S 218 -1285 230 -1300" 
-                style="fill:none;stroke:black;stroke-width:3"/>
 
-            
-            <path d="M 0 -660 S 174 -660 117 -310 S 204 -5 230 0" 
-                style="fill:none;stroke:black;stroke-width:3"/>
-        </svg>
-    </div>
-    -->
-    </div>
+    
+    <script>
+        
+
+
+    </script>
+    <script src="slides.js"></script>
+    <script src="tracks.js"></script>
+
 </body>
 </html>
