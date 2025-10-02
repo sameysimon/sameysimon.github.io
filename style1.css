@@ -133,6 +133,7 @@ h3 {
     .page {
         position: relative;
         margin-left: 0;
+        left:3vw;
     }
     img {
         width: 80vw;
@@ -142,10 +143,11 @@ h3 {
 @media only screen and (max-width: 400px) {
     .page {
         margin-left: 0;
+        left:3vw;
         
     }
     :root {
-        --main-top: 0;
+        --main-top: 40px;
     }
     ul {
         padding-left: 10px;
