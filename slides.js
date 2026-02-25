@@ -22,3 +22,8 @@ function nextSlide(direction) {
     capEle.innerText = slides[currImg].caption;
 }
 nextSlide(0);
+
+slides.forEach(slide => {
+    const img = new Image();
+    img.src = slide.src;
+});
