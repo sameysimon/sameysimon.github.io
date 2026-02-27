@@ -34,6 +34,6 @@ function nextSlide(direction) {
     const img = new Image();
     img.src = slides[nextImg].src;
     const img_ = new Image();
-    img_.src = slides[prevImg].src;
+    img_.src = slides[lastImg].src;
 }
 nextSlide(0);
