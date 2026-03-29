@@ -6,19 +6,34 @@ const slides = [
     {src:"images/slides/smallTracks.webp", caption:"Wintery train tracks outside Stockport."},
     {src:"images/slides/smallDog.webp", caption:"A small dog!"}
 ];
+let lastImg = slides.length-1;
 let currImg = 0;
+let nextImg = 1;
+
 const imgEle = document.getElementById('img');
 const capEle = document.getElementById('caption');
 function nextSlide(direction) {
+    lastImg += direction;
+    nextImg += direction;
     currImg+=direction;
     if (currImg>=slides.length) {
+        lastImg = slides.length-1;
         currImg=0;
+        nextImg = 1;
     }
-    if (currImg< 0) {
+    if (currImg < 0) {
+        lastImg = slides.length-2;
         currImg= slides.length-1;
+        nextImg = 0
     }
     imgEle.setAttribute("src", slides[currImg].src);
     imgEle.setAttribute("alt", slides[currImg].caption);
     capEle.innerText = slides[currImg].caption;
+    
+    // preloading images either side
+    const img = new Image();
+    img.src = slides[nextImg].src;
+    const img_ = new Image();
+    img_.src = slides[lastImg].src;
 }
 nextSlide(0);
