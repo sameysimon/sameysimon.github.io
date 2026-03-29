@@ -1,14 +1,25 @@
 const path1 = document.getElementById("path1");
+const path1_base = document.getElementById("path1_base");
 const path2 = document.getElementById("path2");
+const path2_base = document.getElementById("path2_base");
 const currPath = path1;
 path2.style.opacity=0;
 
 const train = document.getElementById("train");
 const per1 = document.getElementById("per1");
 
+const page = document.getElementsByClassName("page")[0];
+const pageHeight = page.offsetHeight;
+console.log(pageHeight);
+path1_base.setAttribute("d", `M 2.9224995,5 V ${pageHeight} v 125`);
+path1.setAttribute("d", `M 2.9224995,5 V ${pageHeight} v 125`);
+
+
+
 let pathLength= currPath.getTotalLength();
 currPath.style.strokeDasharray = pathLength + ' ' + pathLength;
 currPath.style.strokeDashoffset = pathLength;
+
 function update() {
     var scrollPercent = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
     var drawLength = pathLength * scrollPercent;
@@ -27,4 +38,5 @@ function update() {
 }
 window.addEventListener("scroll", update);
 window.addEventListener("resize", update);
+
 update();
