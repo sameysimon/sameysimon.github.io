@@ -128,10 +128,21 @@
             <div class="section" id="gallerySection">
                 <h2>Gallery</h2>
                 <div id="slide">
-                    <img src="images/slides/smallDetroit.webp" id="img" alt="dog" srcset="">
+                    <img src="images/slides/smallDetroit.webp" id="img" alt="dog" srcset="" class="gallery-clickable">
                     <div id="caption">In Detroit</div>
                     <a class="prev" onclick="nextSlide(-1)"><</a>
                     <a class="next" onclick="nextSlide(1)">></a>
+                </div>
+            </div>
+            
+            <div id="lightboxModal" class="lightbox-modal">
+                <div class="lightbox-overlay"></div>
+                <div class="lightbox-content">
+                    <span class="lightbox-close">&times;</span>
+                    <img id="lightboxImage" src="" alt="">
+                    <div id="lightboxCaption" class="lightbox-caption"></div>
+                    <a class="lightbox-prev" onclick="nextSlide(-1)"><</a>
+                    <a class="lightbox-next" onclick="nextSlide(1)">></a>
                 </div>
             </div>
         </div>
