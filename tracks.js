@@ -72,7 +72,6 @@ console.log(trackOnePeople);
 for (let i = 0; i <= trackOnePeople.length; i++) {
     const p = i===5 ? trackTwoPer : trackOnePeople[i];
     const personPos = personDist[i]
-    const onTrack = i===5 ? curr===1 : curr===0;
     updateCallbacks.push((pathLength, scrollPercent, drawLength) => {
         if (personPos > drawLength) {
             p.setAttribute('href', "images/Concern.svg")                    
@@ -81,7 +80,8 @@ for (let i = 0; i <= trackOnePeople.length; i++) {
             p.setAttribute('href', "images/Worried.svg")                    
         }
         if (personPos <= drawLength) {
-            if (onTrack) {
+            const toBeHit = p.id==="per6" ? curr===1 : curr===0;
+            if (toBeHit) {
                 p.setAttribute('href', "images/Hurt.svg")
             } else {
                 p.setAttribute('href', "images/Relief.svg")
@@ -92,7 +92,7 @@ for (let i = 0; i <= trackOnePeople.length; i++) {
 
 updateCallbacks.push((pathLength, scrollPercent, drawLength) => {
     document.getElementById("debug").innerText = 
-    `scrollPercent: ${scrollPercent.toFixed(2)}, drawLength: ${drawLength.toFixed(2)} Debug text left in for fun.
+    `scrollPercent: ${scrollPercent.toFixed(2)}, drawLength: ${drawLength.toFixed(2)}, curr track: ${curr}.d Debug text left in for fun.
     Hit F to hide.`;
 });
 
